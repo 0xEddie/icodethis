@@ -1,0 +1,27 @@
+/* Write your CSS code here */
+body {
+	position: relative;
+	overflow: hidden;
+}
+
+main::after,
+main::before {
+	content: '';
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: white;
+	background: linear-gradient(10deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 60%);
+	position: absolute;
+	filter: blur(2px);
+}
+
+main::after {
+	bottom: -40px;
+	left: -60px;
+}
+
+main::before {
+	top: -50px;
+	right: -100px;
+}
